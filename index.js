@@ -40,9 +40,9 @@ Don't forget to uncomment the console.log
 ===
 ANSWER: Red
 **********/
-
+// Abdulwahab
 function getFruitColor(fruit) {
-  // Your code here
+  return fruit.color;
 }
 // console.log(getFruitColor(fruits[0]));
 
@@ -55,11 +55,13 @@ You have a function that:
 ===
 ANSWER: true
 **********/
-
+// Abdulwahab
 function isFruitTasteMatching(fruit, taste) {
-  // Your code here
+  const fruitTaste = fruit.taste === taste;
+  return fruitTaste;
 }
-// console.log(isFruitTasteMatching(fruits[2], "Citrusy"));
+
+// console.log(isFruitTasteMatching(fruits[2], 'Citrusy'));
 
 /**********
 Question 3:
@@ -109,17 +111,18 @@ ANSWER:
   }
 ]
 **********/
-
+// Meshal
 function addFruit(fruits, fruit) {
-  // Your code here
+  fruits.push(fruit);
+  return fruits;
 }
 
-// const newFruit = {
-//   "id": 506,
-//   "name": "Mango",
-//   "color": "Yellow",
-//   "taste": "Sweet"
-// };
+const newFruit = {
+  id: 506,
+  name: 'Mango',
+  color: 'Yellow',
+  taste: 'Sweet',
+};
 
 // console.log(addFruit(fruits, newFruit));
 
@@ -131,8 +134,8 @@ countSweetFruits(fruits):
 ===
 ANSWER: 4
 **********/
-
+// Meshal
 function countSweetFruits(fruits) {
-  // Your code here
+  return fruits.filter((fruit) => fruit.taste === 'Sweet').length;
 }
 // console.log(countSweetFruits(fruits));
